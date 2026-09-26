@@ -20,3 +20,5 @@ npm test
 The converter creates one consolidated workbook per format. `Nodes` is the lossless source of truth: it retains the filename, element order, nesting, attributes, text, and repeating elements. Do not remove `NodeId`, `ParentNodeId`, or `Position` if the workbook must convert back to XML.
 
 The `Values` sheet is a readable list of XML paths and values. `Metadata` records the batch information and `Errors` records files that could not be processed.
+
+Thanks
