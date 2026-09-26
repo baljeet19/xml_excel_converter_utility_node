@@ -1,5 +1,7 @@
 # XML ↔ Excel Conversion Utility
 
+TypeScript tool for lossless round-trip conversion between XML and Excel. It handles nested structures, repeated elements, attributes, and tag order via a canonical node-graph model, using SheetJS and Playwright tests.
+
 ## Setup
 
 ```bash
