@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<MortgageApplicationRequest val="MORTGAGE_APPLICATION">
+
+    <ApplicationInformation val="APPLICATION_INFORMATION">
+        <ApplicationNumber val="MORT-2026-000123"/>
+        <ApplicationDate val="2026-09-25"/>
+        <ApplicationStatus val="SUBMITTED"/>
+        <ApplicationType val="PURCHASE"/>
+        <MortgagePurpose val="NEW_HOME_PURCHASE"/>
+    </ApplicationInformation>
+
+
+    <Applicants val="APPLICANTS">
+        <Applicant>
+            <Applicanttype code="1" />
+            <PersonalInformation>
+                <Name val="John Doe"/>
+                <DateOfBirth val="1985-06-15"/>
+                <MaritalStatus val="MARRIED"/>
+                <NumberOfDependents val="2"/>
+                <Citizenship val="CANADIAN"/>
+            </PersonalInformation>
+
+            <ContactInformation val="CONTACT_INFORMATION">
+                <Email val="john.doe@example.com"/>
+                <MobilePhone val="+14165550101"/>
+                <HomePhone val="+14165550102"/>
+            </ContactInformation>
+
+            <CurrentAddress val="CURRENT_ADDRESS">
+                <StreetNumber val="100"/>
+                <StreetName val="King Street West"/>
+                <UnitNumber val="2501"/>
+                <City val="Toronto"/>
+                <Province val="ON"/>
+                <PostalCode val="M5V1A1"/>
+                <Country val="ABc"/>
+                <YearsAtAddress val="5"/>
+            </CurrentAddress>
+
+            <Employment val="EMPLOYMENT">
+
+                <Employer val="ABC TECHNOLOGIES INC">
+                    <EmployerName val="ABC Technologies Inc."/>
+                    <EmployerType val="FULL_TIME"/>
+                    <JobTitle val="Senior Manager"/>
+                    <EmploymentStartDate val="2020-04-01"/>
+                    <EmploymentStatus val="ACTIVE"/>
+
+                    <EmployerAddress val="EMPLOYER_ADDRESS">
+                        <StreetNumber val="500"/>
+                        <StreetName val="Bay Street"/>
+                        <City val="Toronto"/>
+                        <Province val="ON"/>
+                        <PostalCode val="M5G2C8"/>
+                        <Country val="ABc"/>
+                    </EmployerAddress>
+                </Employer>
+
+                <Income val="INCOME">
+                    <AnnualBaseSalary val="145000.00"/>
+                    <AnnualBonus val="15000.00"/>
+                    <AnnualCommission val="0.00"/>
+                    <OtherAnnualIncome val="5000.00"/>
+                    <TotalAnnualIncome val="165000.00"/>
+                    <IncomeCurrency val="CAD"/>
+                </Income>
+
+            </Employment>
+
+            <Assets val="ASSETS">
+
+                <BankAccount id="1" val="CHEQUING">
+                    <InstitutionName val="ABC Bank"/>
+                    <AccountType val="CHEQUING"/>
+                    <AccountNumber val="000012345678"/>
+                    <CurrentBalance val="35000.00"/>
+                    <Currency val="CAD"/>
+                </BankAccount>
+
+                <InvestmentAccount id="2" val="TFSA">
+                    <InstitutionName val="Investment Company"/>
+                    <AccountType val="TFSA"/>
+                    <AccountNumber val="000045678901"/>
+                    <CurrentBalance val="85000.00"/>
+                    <Currency val="CAD"/>
+                </InvestmentAccount>
+
+                <Vehicle id="3" val="VEHICLE">
+                    <Make val="Toyota"/>
+                    <Model val="Highlander"/>
+                    <Year val="2022"/>
+                    <EstimatedValue val="42000.00"/>
+                    <OutstandingLoan val="15000.00"/>
+                </Vehicle>
+
+            </Assets>
+
+            <Liabilities val="LIABILITIES">
+
+                <CreditCard id="1" val="CREDIT_CARD">
+                    <InstitutionName val="Bank A"/>
+                    <AccountNumber val="000011112222"/>
+                    <CreditLimit val="20000.00"/>
+                    <OutstandingBalance val="3500.00"/>
+                    <MonthlyPayment val="150.00"/>
+                </CreditCard>
+
+                <AutoLoan id="2" val="AUTO_LOAN">
+                    <LenderName val="Auto Finance Company"/>
+                    <AccountNumber val="000033334444"/>
+                    <OriginalLoanAmount val="45000.00"/>
+                    <OutstandingBalance val="15000.00"/>
+                    <MonthlyPayment val="650.00"/>
+                    <MaturityDate val="2028-06-01"/>
+                </AutoLoan>
+
+            </Liabilities>
+        </Applicant>
+
+        <Applicant id="2" val="CO_APPLICANT">
+
+            <PersonalInformation val="PERSONAL_INFORMATION">
+                <FirstName val="Jane"/>
+                <MiddleName val="Elizabeth"/>
+                <LastName val="Doe"/>
+                <DateOfBirth val="1987-09-22"/>
+                <MaritalStatus val="MARRIED"/>
+                <NumberOfDependents val="2"/>
+            </PersonalInformation>
+
+
+            <Employment val="EMPLOYMENT">
+
+                <Employer val="XYZ HEALTHCARE">
+                    <EmployerName val="XYZ Healthcare"/>
+                    <EmployerType val="FULL_TIME"/>
+                    <JobTitle val="Registered Nurse"/>
+                    <EmploymentStartDate val="2019-08-15"/>
+                    <EmploymentStatus val="ACTIVE"/>
+                </Employer>
+
+                <Income val="INCOME">
+                    <AnnualBaseSalary val="95000.00"/>
+                    <AnnualBonus val="5000.00"/>
+                    <OtherAnnualIncome val="0.00"/>
+                    <TotalAnnualIncome val="100000.00"/>
+                    <IncomeCurrency val="CAD"/>
+                </Income>
+
+            </Employment>
+
+
+        </Applicant>
+    </Applicants>
+
+    <Property val="SUBJECT_PROPERTY">
+
+        <PropertyInformation val="PROPERTY_INFORMATION">
+            <PropertyType val="DETACHED"/>
+            <YearBuilt val="2018"/>
+            <NumberOfBedrooms val="4"/>
+            <NumberOfBathrooms val="3"/>
+            <LivingArea val="2400"/>
+            <LivingAreaUnit val="SQFT"/>
+        </PropertyInformation>
+
+        <PropertyAddress val="PROPERTY_ADDRESS">
+            <StreetNumber val="250"/>
+            <StreetName val="Maple Avenue"/>
+            <UnitNumber val=""/>
+            <City val="Whitby"/>
+            <Province val="ON"/>
+            <PostalCode val="L1N3K5"/>
+            <Country val="ABc"/>
+        </PropertyAddress>
+
+        <PurchaseInformation val="PURCHASE_INFORMATION">
+            <PurchasePrice val="950000.00"/>
+            <DownPayment val="190000.00"/>
+            <DownPaymentPercentage val="20.00"/>
+            <RequestedMortgageAmount val="760000.00"/>
+            <ClosingDate val="2026-11-15"/>
+        </PurchaseInformation>
+
+    </Property>
+
+    <MortgageDetails val="MORTGAGE_DETAILS">
+        <RequestedAmount val="760000.00"/>
+        <AmortizationPeriod val="25"/>
+        <AmortizationUnit val="YEARS"/>
+        <Term val="5"/>
+        <TermUnit val="YEARS"/>
+        <InterestRateType val="FIXED"/>
+        <RequestedInterestRate val="4.49"/>
+        <PaymentFrequency val="MONTHLY"/>
+        <EstimatedMonthlyPayment val="4200.00"/>
+    </MortgageDetails>
+
+    <ExistingMortgage val="EXISTING_MORTGAGE">
+        <HasExistingMortgage val="0"/>
+        <OutstandingBalance val="0.00"/>
+        <MonthlyPayment val="0.00"/>
+        <LenderName val=""/>
+        <MaturityDate val=""/>
+    </ExistingMortgage>
+
+    <DownPaymentInformation val="DOWN_PAYMENT">
+
+        <TotalDownPayment val="190000.00"/>
+
+        <Source id="1" val="SAVINGS">
+            <SourceType val="PERSONAL_SAVINGS"/>
+            <Amount val="120000.00"/>
+            <Currency val="CAD"/>
+        </Source>
+
+        <Source id="2" val="GIFT">
+            <SourceType val="FAMILY_GIFT"/>
+            <Amount val="70000.00"/>
+            <Currency val="CAD"/>
+            <Relationship val="PARENT"/>
+        </Source>
+
+    </DownPaymentInformation>
+</MortgageApplicationRequest>

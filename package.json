@@ -1,0 +1,24 @@
+{
+  "name": "xml-excel-converter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "convert:to-excel": "tsx src/cli/xml-to-excel.ts",
+    "convert:to-xml": "tsx src/cli/excel-to-xml.ts",
+    "test": "playwright test",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.2.5",
+    "pino": "^9.7.0",
+    "xlsx": "^0.18.5",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.54.1",
+    "@types/node": "^22.15.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

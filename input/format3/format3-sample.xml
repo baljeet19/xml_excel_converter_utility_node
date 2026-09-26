@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MortgageApplication>
+
+    <ApplicationInformation captured="1" val="APPLICATION_INFORMATION">
+        <ApplicationNumber captured="1" val="MORT-2026-000123"/>
+        <ApplicationDate captured="1" val="2026-09-25"/>
+        <ApplicationStatus captured="1" val="SUBMITTED"/>
+        <ApplicationType captured="1" val="PURCHASE"/>
+        <MortgagePurpose captured="1" val="NEW_HOME_PURCHASE"/>
+    </ApplicationInformation>
+
+
+    <Applicants>
+
+        <Applicant id="1" captured="1" val="PRIMARY_APPLICANT">
+
+            <PersonalInformation>
+                <FirstName captured="1" val="John"/>
+                <MiddleName captured="1" val="Michael"/>
+                <LastName captured="1" val="Doe"/>
+                <DateOfBirth captured="1" val="1985-06-15"/>
+                <MaritalStatus captured="1" val="MARRIED"/>
+                <NumberOfDependents captured="1" val="2"/>
+            </PersonalInformation>
+
+
+            <CurrentAddress>
+			<StreetNumber captured="1" val="500"/>
+                        <StreetName captured="1" val="ABC Street"/>
+                        <City captured="1" val="sample"/>
+                        <State captured="1" val="ON"/>
+                        <PostalCode captured="1" val="12345"/>
+
+                <YearsAtAddress captured="1" val="5"/>
+            </CurrentAddress>
+
+            <Employment captured="1" val="EMPLOYMENT">
+
+                <Employer captured="1" val="ABC TECHNOLOGIES INC">
+                    <EmployerName captured="1" val="ABC Technologies Inc."/>
+                    <EmployerType captured="1" val="FULL_TIME"/>
+                    <JobTitle captured="1" val="Senior Manager"/>
+                    <EmploymentStartDate captured="1" val="2020-04-01"/>
+                    <EmploymentStatus captured="1" val="ACTIVE"/>
+
+                    <EmployerAddress captured="1" val="EMPLOYER_ADDRESS">
+                        <StreetNumber captured="1" val="500"/>
+                        <StreetName captured="1" val="ABC Street"/>
+                        <City captured="1" val="sample"/>
+                        <State captured="1" val="ON"/>
+                        <PostalCode captured="1" val="12345"/>
+                    </EmployerAddress>
+                </Employer>
+
+                <Income captured="1" val="INCOME">
+                    <AnnualBaseSalary captured="1" val="145000.00"/>
+                    <AnnualBonus captured="1" val="15000.00"/>
+                    <AnnualCommission captured="1" val="0.00"/>
+                    <OtherAnnualIncome captured="1" val="5000.00"/>
+                    <TotalAnnualIncome captured="1" val="165000.00"/>
+                    <IncomeCurrency captured="1" val="CAD"/>
+                </Income>
+
+            </Employment>
+
+       </Applicant>
+
+
+        <Applicant id="2" captured="1" val="CO_APPLICANT">
+
+            <PersonalInformation captured="1" val="PERSONAL_INFORMATION">
+                <FirstName captured="1" val="Jane"/>
+                <MiddleName captured="1" val="Elizabeth"/>
+                <LastName captured="1" val="Doe"/>
+                <DateOfBirth captured="1" val="1987-09-22"/>
+                <MaritalStatus captured="1" val="MARRIED"/>
+                <NumberOfDependents captured="1" val="2"/>
+            </PersonalInformation>
+            <Employment captured="1" val="EMPLOYMENT">
+
+                <Employer captured="1" val="XYZ HEALTHCARE">
+                    <EmployerName captured="1" val="XYZ Healthcare"/>
+                    <EmployerType captured="1" val="FULL_TIME"/>
+                    <JobTitle captured="1" val="Registered Nurse"/>
+                    <EmploymentStartDate captured="1" val="2019-08-15"/>
+                    <EmploymentStatus captured="1" val="ACTIVE"/>
+                </Employer>
+
+                <Income captured="1" val="INCOME">
+                    <AnnualBaseSalary captured="1" val="95000.00"/>
+                    <AnnualBonus captured="1" val="5000.00"/>
+                    <OtherAnnualIncome captured="1" val="0.00"/>
+                    <TotalAnnualIncome captured="1" val="100000.00"/>
+                    <IncomeCurrency captured="1" val="CAD"/>
+                </Income>
+
+            </Employment>
+
+         </Applicant>
+
+    </Applicants>
+
+
+    <Property captured="1" val="SUBJECT_PROPERTY">
+
+        <PropertyInformation captured="1" val="PROPERTY_INFORMATION">
+            <PropertyType captured="1" val="DETACHED"/>
+            <YearBuilt captured="1" val="2018"/>
+            <NumberOfBedrooms captured="1" val="4"/>
+            <NumberOfBathrooms captured="1" val="3"/>
+            <LivingArea captured="1" val="2400"/>
+            <LivingAreaUnit captured="1" val="SQFT"/>
+        </PropertyInformation>
+
+        <PropertyAddress captured="1" val="PROPERTY_ADDRESS">
+            <StreetNumber captured="1" val="250"/>
+            <StreetName captured="1" val="Maple Avenue"/>
+            <UnitNumber captured="1" val=""/>
+            <City captured="1" val="Sing"/>
+            <State captured="1" val="AB"/>
+            <PostalCode captured="1" val="123456"/>
+            <Country captured="1" val="ABC"/>
+        </PropertyAddress>
+
+        <PurchaseInformation captured="1" val="PURCHASE_INFORMATION">
+            <PurchasePrice captured="1" val="950000.00"/>
+            <DownPayment captured="1" val="190000.00"/>
+            <DownPaymentPercentage captured="1" val="20.00"/>
+            <RequestedMortgageAmount captured="1" val="760000.00"/>
+            <ClosingDate captured="1" val="2026-11-15"/>
+        </PurchaseInformation>
+
+    </Property>
+
+
+    <MortgageDetails captured="1" val="MORTGAGE_DETAILS">
+
+        <RequestedAmount captured="1" val="760000.00"/>
+        <AmortizationPeriod captured="1" val="25"/>
+        <AmortizationUnit captured="1" val="YEARS"/>
+        <Term captured="1" val="5"/>
+        <TermUnit captured="1" val="YEARS"/>
+        <InterestRateType captured="1" val="FIXED"/>
+        <RequestedInterestRate captured="1" val="4.49"/>
+        <PaymentFrequency captured="1" val="MONTHLY"/>
+        <EstimatedMonthlyPayment captured="1" val="4200.00"/>
+    </MortgageDetails>
+
+
+    <ExistingMortgage captured="1" val="EXISTING_MORTGAGE">
+
+        <HasExistingMortgage captured="1" val="0"/>
+        <OutstandingBalance captured="1" val="0.00"/>
+        <MonthlyPayment captured="1" val="0.00"/>
+        <LenderName captured="1" val=""/>
+        <MaturityDate captured="1" val=""/>
+
+    </ExistingMortgage>
+
+
+    <DownPaymentInformation captured="1" val="DOWN_PAYMENT">
+
+        <TotalDownPayment captured="1" val="190000.00"/>
+
+        <Source id="1" captured="1" val="SAVINGS">
+            <SourceType captured="1" val="PERSONAL_SAVINGS"/>
+            <Amount captured="1" val="120000.00"/>
+            <Currency captured="1" val="CAD"/>
+        </Source>
+
+        <Source id="2" captured="1" val="GIFT">
+            <SourceType captured="1" val="FAMILY_GIFT"/>
+            <Amount captured="1" val="70000.00"/>
+            <Currency captured="1" val="CAD"/>
+            <Relationship captured="1" val="PARENT"/>
+        </Source>
+
+    </DownPaymentInformation>
+</MortgageApplication>
